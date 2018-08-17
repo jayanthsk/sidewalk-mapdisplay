@@ -1,0 +1,153 @@
+{
+    "quest":{
+        "new":{
+            "busstop":{
+                "name": "Bus-stop Question",
+                "numQuestions": 5,
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "Q1":{
+                    "type": "boolean",
+                    "prompt": "Is there a place to sit?",
+                    "skip": false
+                },
+                "Q2":{
+                    "type": "boolean",
+                    "prompt": "Is the Bus stop near shade?",
+                    "skip": false
+                },
+                "Q3":{
+                    "type": "integer",
+                    "prompt": "By your estimate, how many people are waiting for the bus at this time?",
+                    "minLimit": 1,
+                    "skip": false
+                },
+                "Q4":{
+                    "type": "picture",
+                    "prompt": "Could you take a picture of the bus stop?",
+                    "skip": false
+                },
+                "Q5":{
+                    "type": "limit",
+                    "prompt": "On a scale from 1 (not-at-all) to 10 (get-me-out-of-here), how noisy are your surroundings?",
+                    "minLimit": "1",
+                    "maxLimit": "10",
+                    "skip": false
+                }
+            },
+            "intersection":{
+                "name": "Intersection question",
+                "numQuestions": 4,
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "Q1":{
+                    "type": "MCQ",
+                    "prompt": "Is the curb a hard (90 degrees) or soft (sloped) curb?",
+                    "numOptions": 2,
+                    "Option1": "Hard curb",
+                    "Option2": "Soft curb",
+                    "skip": false
+                },
+                "Q2":{
+                    "type": "integer",
+                    "prompt": "How many roads have crosswalks?",
+                    "minLimit": 0,
+                    "skip": false
+                },
+                "Q3":{
+                    "type": "boolean",
+                    "prompt": "Are there any truncated ramps (the yellow bumpy things) on intersection?",
+                    "skip": false
+                },
+                "Q4":{
+                    "type": "limit",
+                    "prompt": "On a scale from 1 (not-at-all) to 10 (get-me-out-of-here), how noisy are your surroundings?",
+                    "minLimit": "1",
+                    "maxLimit": "10",
+                    "skip": false
+                }
+            },
+            "sidewalk":{
+                "name": "Sidewalk Question",
+                "numQuestions": 4,
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "Q1":{
+                    "type": "MCQ",
+                    "prompt": "What is this sidewalk made out of?",
+                    "numOptions": 5,
+                    "Option1": "cement",
+                    "Option2": "brick",
+                    "Option3": "pebbles",
+                    "Option4": "dirt",
+                    "Option5": "grass",
+                    "skip": false
+                },
+                "Q2":{
+                    "type": "integer",
+                    "prompt": "By your estimate, how many people are walking on the street at this time?",
+                    "minLimit": 1,
+                    "skip": false
+                },
+                "Q3":{
+                    "type": "picture",
+                    "prompt": "How many big trees are in this locality (shade on the sidewalk)? Could you take a picture and share with us?",
+                    "skip": false
+                },
+                "Q4":{
+                    "type": "limit",
+                    "prompt": "On a scale from 1 (not-at-all) to 10 (get-me-out-of-here), how noisy are your surroundings?",
+                    "minLimit": "1",
+                    "maxLimit": "10",
+                    "skip": false
+                }
+            }
+        },
+        "existing":{
+            "busstop":{
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "skip": false
+            },
+            "intersection":{
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "skip": false
+            },
+            "sidewalk":{
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "skip": false
+            },
+            "home":{
+                "numQuestion": 2,
+                "reassurance":{
+                    "type": "boolean",
+                    "prompt": "Do you want to tackle this quest?"
+                },
+                "Q1":{
+                    "type": "boolean",
+                    "prompt": "Is your current location your home?",
+                    "skip": false
+                },
+                "Q2":{
+                    "type": "picture",
+                    "prompt": "Could you take a picture of your home?",
+                    "skip": false
+                }
+            }
+        }        
+    }
+}
